@@ -1,0 +1,23 @@
+@mixin font-mixin  {
+    font-family: 'Roboto', "cursive";
+    // font-style: normal;
+
+}
+
+// @mixin button-bg($bg) {
+    
+//     background: $bg;
+//     &:hover {
+//       background:darken($bg,8%);
+//       transition: all 0.3s ease;
+//     }
+//     &:active {
+//       background:darken($bg,25%);
+//     } 
+//   }
+
+
+@mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);}

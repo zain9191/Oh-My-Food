@@ -1,0 +1,11 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "OpenClassRoom-P3",
+  "main": "index.js",
+  "scripts": {
+      "sass": "sass --watch ./sass/main.scss: public/css/style.css"
+  },
+  "author": "Zain Frayha",
+  "license": "ISC"
+}

@@ -1,0 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+h1,h2,h3,h4{
+    font-size: 1.4rem;
+    // line-height: 1.1;
+    // margin-top: 0;
+    @include font-mixin;
+
+}
+
+p{
+    margin-top: 0%
+}
+
+a, a:visited,a:active{
+    text-decoration: none
+}
+
+
+
+.header{
+    &__h1{
+        width: auto;
+        padding: 10% 15% 5% 15% ;
+        margin: 0;
+    }
+    &__h2{
+        padding: 0% 10% 0% 10%;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+

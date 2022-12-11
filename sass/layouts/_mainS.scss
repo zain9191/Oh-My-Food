@@ -1,0 +1,39 @@
+.main{
+    &__h2{
+        padding-left: 20px;
+    }
+    &__article{
+        &--img{
+            width: 80%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius:20px ;
+            border-top-right-radius:20px ;
+            margin-left: 10%;
+        }
+    }
+    &__div__1{
+        display: flex;
+        flex-direction: row;
+    }
+    &__div{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        // border:dotted;
+        width: 70%;
+        margin-left: 10%;
+        &__h3{
+            margin: 0;
+            font-size: 20px;
+        }
+        
+        &__h4{
+            margin: 0;
+            font-size: 15px;
+            font-weight: 50;
+        }
+                
+    }
+
+}
