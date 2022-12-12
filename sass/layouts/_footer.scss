@@ -1,0 +1,18 @@
+.footer{
+    background-color: $bg-footer;
+    &__img{
+        width: 100px;
+        margin-left: 30px;
+        margin-top: 25px;
+        // background-color: $bg-white;
+        filter: brightness(0) invert(1);
+    
+    }
+    &__li{
+        color: $bg-white;
+        @extend %footer__li
+
+    }
+
+
+}
