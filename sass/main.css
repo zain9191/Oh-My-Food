@@ -120,6 +120,7 @@ body {
 }
 
 .main__article {
+  cursor: pointer;
   margin-left: 10%;
   background-color: #ffff;
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
@@ -173,9 +174,14 @@ body {
 }
 
 .main__div--heart {
+  display: inline;
   height: 30px;
   width: 30px;
-  border: dotted;
+}
+
+i {
+  width: 20px;
+  height: 20px;
 }
 
 .header__btn {
