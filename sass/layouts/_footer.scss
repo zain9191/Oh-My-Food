@@ -1,16 +1,32 @@
 .footer{
+    
+
+
     background-color: $bg-footer;
     &__img{
         width: 100px;
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 25px;
         // background-color: $bg-white;
         filter: brightness(0) invert(1);
     
     }
+
+    &__ul{
+
+        padding-left: 20px;
+    }
     &__li{
+
+
         color: $bg-white;
-        @extend %footer__li
+        margin-bottom: 10px;
+        // margin-left: 40px;
+        @extend %footer__li;
+        &__a:link {
+            color: $bg-white;
+
+        }
 
     }
 
