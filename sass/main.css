@@ -260,6 +260,7 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
+  color: black;
 }
 
 .header__h1 {
