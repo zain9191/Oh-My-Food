@@ -12,6 +12,7 @@
     &__h2{
         padding-left: 20px;
         @include font-mixin;
+        font-size: 30px;
 
     }
     &__restaurant{
@@ -51,34 +52,42 @@
     &__div__1{
         height: 75px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        border: dotted;
   
     }
-    
+
+
     &__div{
         display: flex;
         flex-direction: column;
         margin: 0;
         width: 70%;
-        margin-left: 10%;
+        // margin-left: 1rem;
         &__h3{
+            // width: ;
             margin: 0;
             font-size: 20px;
         }
         
         &__h4{
             margin: 0;
-            font-size: 15px;
-            font-weight: 50;
+            font-size: 1.2rem;
+            font-weight: 200;
         }
         &--heart{
             display: inline;
-            height: 30px;
-            width: 30px;
-            
+            font-size: xx-large;
+            // font-size: 2rem;
+            &:hover{
+                // border: dotted;
+                font-weight: 900;
+
+                background: -webkit-gradient(linear, left top, left bottom, from($color-Primaire), to($color-secindaire));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                     }
+
         }
                 
     }

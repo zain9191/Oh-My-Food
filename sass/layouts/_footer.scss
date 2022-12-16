@@ -1,6 +1,7 @@
 .footer{
     
-
+    @include font-mixin;
+    padding-bottom: 20px;
 
     background-color: $bg-footer;
     &__img{
@@ -21,10 +22,15 @@
 
         color: $bg-white;
         margin-bottom: 10px;
-        // margin-left: 40px;
         @extend %footer__li;
+        & > i{
+            // border: dotted;
+            padding-right: 5px;
+        }
+
         &__a:link {
             color: $bg-white;
+        
 
         }
 
