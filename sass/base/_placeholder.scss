@@ -7,9 +7,14 @@
     border-radius: 20px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     @include font-mixin;
+    @include shadow-box;
+    // border: dotted;
+    gap: 10px;
+
+
 
 }
 
@@ -28,3 +33,10 @@
     background: linear-gradient(#FF79DA, #9356DC);
 
 }
+
+
+.header %box-shadow{
+    // box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border: dotted red 5px;
+}
+

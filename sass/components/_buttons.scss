@@ -3,7 +3,7 @@
 // }
 
 .header__btn{
-    width: 220px;
+    width: 240px;
     height: 50px;
 
     display: flex;
@@ -14,7 +14,7 @@
     color: $bg-white;
 
     border:none;
-    border-radius: 20px;
+    border-radius: 50px;
 
     // font-weight: 300;
     font-size: large;
@@ -22,6 +22,8 @@
 
     @include font-mixin;
     @include linear-gradient($color-secindaire,$color-Primaire);
+    @include shadow-box;
+    // border: dotted;
 
 }
 
