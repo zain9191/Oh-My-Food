@@ -4,41 +4,34 @@
 
     &__div__head{
         @media (min-width: 700px) {
-            width: 100%;
             display: flex;
             flex-wrap: wrap;
-            // border: dotted red 6px;
-            // width: fit-content;
-            a{ 
-                width: 90%;
-                // border: dotted 6px red;
-            }
-
-    
           }
-
     }
 
     &__h2{
         padding-left: 20px;
+        @include font-mixin;
 
     }
     &__restaurant{
-        width: 49%;
-        margin: 0px;
-        padding: 0px;
+        background-color: red;
+        // width: 100%;
+        // height: 100%;
+        // margin: 0px;
+        // padding: 0px;
         // ma
         // border: dotted;
 
     }
     &__article{
         
-        margin-left: 10%;
+        margin-left: 5%;
         background-color: $bg-white;
 
-        @include box-shadow;
-        // box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-        width: 80%;
+        @include shadow-box;
+        width: 90%;
+    
         margin-bottom: 20px;
         border-radius: 20px;
         // border: dotted;
@@ -56,8 +49,12 @@
         }
     }
     &__div__1{
+        height: 75px;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: dotted;
   
     }
     
