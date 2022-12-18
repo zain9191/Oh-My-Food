@@ -28,3 +28,14 @@
 }
 
 
+.menu__div__btn{
+    // width: 50%;
+    // padding-left: auto;
+    // background-color: red;
+    @extend %menu__btn;
+    // @extend %section__btn;
+    // @include shadow-box;
+
+}
+
+

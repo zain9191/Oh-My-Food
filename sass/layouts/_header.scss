@@ -14,7 +14,8 @@ body{
     // max-width: 600px;
     // margin: auto;
     &__logo{
-            box-shadow: 0 4px 2px -2px gray;
+            // box-shadow: 0 4px 2px -2px gray;
+            @include shadow-box;
             background-color: $bg-white;
             display: flex;
             justify-content: center;

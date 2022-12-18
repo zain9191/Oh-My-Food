@@ -15,8 +15,6 @@
     // border: dotted;
     gap: 10px;
 
-
-
 }
 
 .section %color-change:hover{
@@ -48,3 +46,26 @@
     border: dotted red 5px;
 }
 
+
+
+%menu__btn{
+    width: 180px;
+    max-width: 400px;
+    height: 50px;
+    // margin-left: 40%;
+    // margin: 0px 10px 20px 10px;
+    border: none;
+    border-radius: 25px;
+
+
+    position: relative;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font-mixin;
+    @include shadow-box;
+    // gap: 10px;
+
+}
