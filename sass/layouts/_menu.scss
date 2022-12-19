@@ -130,8 +130,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
     &__btn{
-        border: dotted;
+    @extend %menu__btn;
+
         
     }
 }
+
+
