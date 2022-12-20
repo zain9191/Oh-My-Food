@@ -452,7 +452,7 @@ a, a:visited, a:active {
 
 .menu__header__img {
   width: 100%;
-  height: 250px;
+  height: 330px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -619,8 +619,8 @@ a, a:visited, a:active {
 
 .menu__article:hover .menu__article__hidden {
   display: inline-block;
-  -webkit-animation: checked 500ms;
-          animation: checked 500ms;
+  -webkit-animation: checked 300ms;
+          animation: checked 300ms;
 }
 
 .menu__div {
