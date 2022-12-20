@@ -5,7 +5,6 @@ $police-logo: "Shrikhand";
 $color-Primaire:#9356DC;
 $color-secindaire: #FF79DA;
 $color-Tertiaire: #99E2D0;
-
 $btn-hover-color:#f5edff;
 
 
@@ -14,4 +13,11 @@ $bg-gray: #f4f4f4;
 $bg-footer: #353535;
 $fontAwesome-color:#807c7c;
 
+$mobil:700px;
+$tablet: 900px;
 
+
+@keyframes checked{
+    0%{opacity: 0; width: 0px;}
+    100%{opacity: 1; width: 60px;}
+  }
