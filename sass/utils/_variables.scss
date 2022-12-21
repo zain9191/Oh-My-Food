@@ -6,6 +6,7 @@ $color-Primaire:#9356DC;
 $color-secindaire: #FF79DA;
 $color-Tertiaire: #99E2D0;
 $btn-hover-color:#f5edff;
+$location-color: #343434;
 
 
 $bg-white: #ffff;
@@ -21,3 +22,56 @@ $tablet: 900px;
     0%{opacity: 0; width: 0px;}
     100%{opacity: 1; width: 60px;}
   }
+
+
+  // test
+
+
+  @keyframes slideInFromLeft {
+
+    // 0% {
+    //   opacity: 0;
+    //   z-index: -10;
+    // }
+
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+    
+    
+@keyframes slideInLeft {
+  0% {
+    transform: translateY(-100%);
+
+  }
+  100% {
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes growDown {
+
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+  }
+  50% {
+
+      transform: rotateX(-20deg);
+  }
+  100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+  }
+  
+}

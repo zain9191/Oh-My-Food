@@ -21,6 +21,96 @@
   }
 }
 
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes growDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes growDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -52,6 +142,7 @@ body {
 }
 
 .header__location {
+  color: #343434;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +543,7 @@ a, a:visited, a:active {
 
 .menu__header__img {
   width: 100%;
-  height: 330px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -503,6 +594,33 @@ a, a:visited, a:active {
   border-bottom: #99E2D0 3px solid;
 }
 
+.menu__section__div {
+  -webkit-animation: 2s ease-out 1s 1 growDown;
+          animation: 2s ease-out 1s 1 growDown;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+
+.menu__section__div:nth-child(1) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.menu__section__div:nth-child(2) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.menu__section__div:nth-child(3) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.menu__section__div:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 @media (min-width: 900px) {
   .menu__section__div {
     display: -webkit-box;
@@ -516,6 +634,10 @@ a, a:visited, a:active {
 }
 
 .menu__article {
+  -webkit-animation: 2s ease-out 1s 1 growDown;
+          animation: 2s ease-out 1s 1 growDown;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
   cursor: pointer;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -539,6 +661,26 @@ a, a:visited, a:active {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+}
+
+.menu__article:nth-child(1) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.menu__article:nth-child(2) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.menu__article:nth-child(3) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.menu__article:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @media (min-width: 900px) {
@@ -619,8 +761,8 @@ a, a:visited, a:active {
 
 .menu__article:hover .menu__article__hidden {
   display: inline-block;
-  -webkit-animation: checked 300ms;
-          animation: checked 300ms;
+  -webkit-animation: checked 500ms;
+          animation: checked 500ms;
 }
 
 .menu__div {

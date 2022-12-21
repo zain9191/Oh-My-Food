@@ -28,6 +28,7 @@ body{
 
     }
     &__location{
+        color: $location-color;
             display: flex;
             height: 40px;
             justify-content: center;

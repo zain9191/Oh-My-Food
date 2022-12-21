@@ -61,6 +61,15 @@
     //     display: flex;
     //     flex-direction: row;
     // }
+
+
+
+
+
+
+
+
+
     &__h2{
         display: block;
         font-weight: 200;
@@ -75,15 +84,69 @@
 
     }
     &__div{
-            @media (min-width: $tablet) {
+
+        animation: 2s ease-out 1s 1 growDown;
+        transform-origin: top center;
+        &:nth-child(1){
+            animation-delay: 250ms;
+        }
+        &:nth-child(2){
+            animation-delay: 500ms;
+        }
+        &:nth-child(3){
+            animation-delay: 750ms;
+        }
+        &:nth-child(4){
+            animation-delay: 1s;
+        }
+    
+    
+
+
+
+        // animation: 2s ease-out 1s 1 growDown;
+        // transform-origin: top center;
+        // &:nth-child(2){
+        //     background-color: red;
+        // }
+
+
+        @media (min-width: $tablet) {
         display: flex;
         flex-direction: row;
     }
     }
 
+
+
+
+
 }
 
 .menu__article{
+    // display: none;
+
+
+
+    animation: 2s ease-out 1s 1 growDown;
+    transform-origin: top center;
+    &:nth-child(1){
+        animation-delay: 250ms;
+    }
+    &:nth-child(2){
+        animation-delay: 500ms;
+    }
+    &:nth-child(3){
+        animation-delay: 750ms;
+    }
+    &:nth-child(4){
+        animation-delay: 1s;
+    }
+
+
+
+
+
     cursor: pointer;
     @include shadow-box;
     @include font-mixin;
@@ -97,6 +160,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+
+
 
 
     @media (min-width: $tablet) {
@@ -163,6 +229,7 @@
         display: flex;
 
 
+
         
     }
 
@@ -194,23 +261,14 @@
 
     &:hover .menu__article__hidden{
         display: inline-block;
-        // border: dotted;
-
         animation: checked 500ms;
-
-        // display: inline-block;
-        // transform: scale(1.5);
-        // transform: translateX(100%);
-        // transform: translateY(-100%);
-        // transform: translate(150px, -7vh);
-
-
-        // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-        // animation-fill-mode: both;
-        // transform: scale(0);
-        // max-width: 100%;
         
     }     
+    // &:hover{
+    //     // border: dotted red 10px;
+    //     // animation: open-menu 500ms;
+
+    // }
 
 }
 
