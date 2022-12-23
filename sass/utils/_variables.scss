@@ -8,7 +8,8 @@ $color-Tertiaire: #99E2D0;
 $btn-hover-color:#f5edff;
 $location-color: #343434;
 
-
+$banner-color:#99e2d0;
+$banner-text-color: #2a8766;
 $bg-white: #ffff;
 $bg-gray: #f4f4f4;
 $bg-footer: #353535;
@@ -18,60 +19,3 @@ $mobil:700px;
 $tablet: 900px;
 
 
-@keyframes checked{
-    0%{opacity: 0; width: 0px;}
-    100%{opacity: 1; width: 60px;}
-  }
-
-
-  // test
-
-
-  @keyframes slideInFromLeft {
-
-    // 0% {
-    //   opacity: 0;
-    //   z-index: -10;
-    // }
-
-    0% {
-      opacity: 0;
-      transform: rotateX(-90deg);
-    }
-    50% {
-        transform: rotateX(-20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-    }
-}
-    
-    
-@keyframes slideInLeft {
-  0% {
-    transform: translateY(-100%);
-
-  }
-  100% {
-    transform: translateY(0);
-
-  }
-}
-
-@keyframes growDown {
-
-    0% {
-      opacity: 0;
-      transform: rotateX(-90deg);
-  }
-  50% {
-
-      transform: rotateX(-20deg);
-  }
-  100% {
-      opacity: 1;
-      transform: rotateX(0deg);
-  }
-  
-}
