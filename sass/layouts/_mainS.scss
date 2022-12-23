@@ -1,5 +1,5 @@
 .main{
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 65px 0px;
     background-color: $bg-gray;
 
     &__div__head{
@@ -12,20 +12,11 @@
 
     &__h2{
         padding-left: 20px;
-        @include font-mixin;
         font-size: 1.7rem;
     }
     &__restaurant{
 
         width: 50%;
-
-        // background-color: red;
-        // width: 100%;
-        // height: 100%;
-        // margin: 0px;
-        // padding: 0px;
-        // ma
-        // border: dotted;
 
     }
     &__article{
@@ -38,13 +29,11 @@
     
         margin-bottom: 20px;
         border-radius: 20px;
-        // border: dotted;
         position: relative;
 
 
 
         &__span{
-            @include font-mixin;
             background-color: $banner-color;
             padding: 10px 15px;
             position: absolute;
@@ -80,27 +69,22 @@
         flex-direction: column;
         margin: 0;
         width: 70%;
-        // margin-left: 1rem;
         &__h3{
-            // width: ;
             margin: 0;
-            font-size: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
         }
         
         &__h4{
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 200;
         }
         &--heart{
             display: inline;
             font-size: xx-large;
             &:hover{
-                font-weight: 900;
-
-                background: -webkit-gradient(linear, left top, left bottom, from($color-Primaire), to($color-secindaire));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include liked;
                      }
 
 
