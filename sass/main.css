@@ -202,7 +202,8 @@ body {
 
 .main__h2 {
   padding-left: 20px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  margin-top: 0px;
 }
 
 .main__restaurant {
@@ -222,13 +223,24 @@ body {
 
 .main__article__span {
   background-color: #99e2d0;
-  padding: 10px 15px;
   position: absolute;
   z-index: 9999;
   top: 10px;
   right: 10px;
+  width: 80px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.2rem;
   color: #2a8766;
+  font-size: 0.8rem;
 }
 
 .main__article--img {
@@ -592,15 +604,6 @@ a, a:visited, a:active {
           animation-delay: 1s;
 }
 
-@media (min-width: 768px) {
-  .menu__article {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    max-width: 350px;
-  }
-}
-
 .menu__article__h3 {
   font-size: 1.1rem;
   font-weight: 500;
@@ -697,7 +700,6 @@ a, a:visited, a:active {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 40px;
-  padding-top: 20px;
 }
 
 @-webkit-keyframes checked {
