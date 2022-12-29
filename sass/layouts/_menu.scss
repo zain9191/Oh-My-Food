@@ -1,266 +1,196 @@
-
-
-
-.menu__header{
-    margin: 0;
-    padding: 0;
-    &__div{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 65px;
-
-    }
-    &__back{
-        font-size: 1.5rem;
-        width: 2rem;
-        padding-left: 1rem;
-    }
-    &__logo{
-        width: 180px;
-        margin: auto;
-        padding-right: 3rem;
-    }
-    &__img{
-        width: 100%;
-        height: 270px;
-        object-fit: cover;
-    }
-}
-
-.menu__main{
-    position: relative;
-    margin-top: -60px;
-    width: 100%;
-
-    background-color: $bg-gray;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-             &__div{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between ;
-            height: 7rem;
-
-            &> i{
-            margin-right: 2rem;
-            
-        }
-
-    }
-
-    &__h1{
-        padding-left: 20px;
-        @include title-mixin;
-        
-    }
-}
-
-.menu__section{
-
-
-    &__h2{
-        display: block;
-        font-weight: 300;
-        font-size: 1rem;
-        margin: 0rem 0rem 0.4rem 1rem ;
-        width: fit-content;
-        border-collapse: collapse;
-        color: $gray-color;
-        &--underline{
-            margin: 0rem 0rem 0rem 1rem ;
-            margin-bottom: 12px;
-
-            display: flex;
-            width: 40px;
-            height: 3px;
-            background-color:$color-Tertiaire;
-        }
-
-    }
-    &__div{
-
-
-        @media (max-width: $tablet) {
-         & article:last-child{
-            margin-bottom: 40px;
-        }
-
-        }
-        
-
-
-
-        animation: 2s ease-out 1s 1 growDown;
-        transform-origin: top center;
-        &:nth-child(1){
-            animation-delay: 250ms;
-        }
-        &:nth-child(2){
-            animation-delay: 500ms;
-        }
-        &:nth-child(3){
-            animation-delay: 750ms;
-        }
-        &:nth-child(4){
-            animation-delay: 1s;
-        }
-        @media (min-width: $tablet) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    }
-
-
-}
-
-.menu__article{
-
-
-    cursor: pointer;
-    @include shadow-box;
-    background-color: $bg-white;
-    border-radius: 1rem;
-    width: 93%;
-    max-width: 400px;
-    margin: auto;
-    height: 70px;
-    // border: dotted red 5px;
-
+.menu__header {
+  margin: 0;
+  padding: 0;
+  &__div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-
-
-    animation: 2s ease-out 1s 1 growDown;
-    transform-origin: top center;
-
-    &:nth-child(1){
-        animation-delay: 250ms;
-    }
-    &:nth-child(2){
-        animation-delay: 500ms;
-    }
-    &:nth-child(3){
-        animation-delay: 750ms;
-    }
-    &:nth-child(4){
-        animation-delay: 1s;
-    }
-
-
-
-
-
-    // @media (min-width: $tablet) {
-        
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: nowrap;
-    //     justify-content: flex-start;
-    
-    //     max-width: 300px;
-
-    // }
-
-    margin-bottom: 1rem; 
-
-    &__h3{
-        font-size: 1.1rem;
-        font-weight: 500;
-        margin: 0.5rem 0rem 0.5rem 0.7rem ;
-
-        
-    }
-    &__p{
-        font-size: 0.9rem;
-        font-weight: 300;
-        margin-left: 1rem;
-        margin: 0.5rem 0.5rem 0.5rem 0.7rem ;
-        color: $gray-color;
-
-
-
-    }
-
-    &__div__text{
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    &__price{
-
-        padding-right: 1rem;
-        display: flex;
-        align-items: center;
-        margin-bottom: -1.5rem;
-        
-
-
-
-    }
-    &__div{
-        height: inherit;
-        display: flex;
-
-
-
-        
-    }
-
-    &__hidden{
-        height: inherit;
-        transition: transform 5s ease-out ;
-
-
-
-        height: inherit;
-        width: 60px;
-        background-color: $color-Tertiaire;
-        color: $bg-white;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none;
-
-        & > i{
-            font-size: 1.5rem;
-
-        }
-
-    }
-
-
-    &:hover .menu__article__hidden{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: checked 500ms;
-        &>i{
-            animation: rotate 1s ease-in-out;
-        }
-        
-    }     
-
+    height: 65px;
+  }
+  &__back {
+    font-size: 1.5rem;
+    width: 2rem;
+    padding-left: 1rem;
+  }
+  &__logo {
+    width: 180px;
+    margin: auto;
+    padding-right: 3rem;
+  }
+  &__img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
 }
 
-.menu__div{
+.menu__main {
+  position: relative;
+  margin-top: -60px;
+  width: 100%;
+
+  background-color: $bg-gray;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  &__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+
+    & > i {
+      margin-right: 2rem;
+    }
+  }
+
+  &__h1 {
+    padding-left: 20px;
+    @include title-mixin;
+  }
+}
+
+.menu__section {
+  &__h2 {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0rem 0rem 0.4rem 1rem;
+    width: fit-content;
+    border-collapse: collapse;
+    color: $gray-color;
+    &--underline {
+      margin: 0rem 0rem 0rem 1rem;
+      margin-bottom: 12px;
+
+      display: flex;
+      width: 40px;
+      height: 3px;
+      background-color: $color-Tertiaire;
+    }
+  }
+  &__div {
+    @media (max-width: $tablet) {
+      & article:last-child {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.menu__article {
+  cursor: pointer;
+  @include shadow-box;
+  background-color: $bg-white;
+  border-radius: 1rem;
+  width: 93%;
+  max-width: 400px;
+  margin: auto;
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  animation: 1s growDown linear;
+  transform-origin: top center;
+
+  &:nth-child(1) {
+    animation-delay: 100ms;
+  }
+  &:nth-child(2) {
+    animation-delay: 120ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 140ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 160ms;
+  }
+
+  margin-bottom: 1rem;
+
+  &__h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0rem 0.5rem 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.7rem;
+    color: $gray-color;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__div__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__price {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.5rem;
+  }
+  &__div {
+    height: inherit;
+    display: flex;
+  }
+
+  &__hidden {
+    height: inherit;
+    transition: transform 5s ease-out;
+
+    height: inherit;
+    width: 60px;
+    background-color: $color-Tertiaire;
+    color: $bg-white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
-    // padding-top: 20px;
-    &__btn{
-    @extend %menu__btn;
+    display: none;
 
-        
+    & > i {
+      font-size: 1.5rem;
     }
+  }
+
+  &:hover .menu__article__hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: checked 500ms;
+    & > i {
+      animation: rotate 0.5s ease-in-out;
+    }
+  }
 }
 
-
+.menu__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  &__btn {
+    @extend %menu__btn;
+  }
+}

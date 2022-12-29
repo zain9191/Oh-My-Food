@@ -1,105 +1,91 @@
-.main{
-    padding: 50px 0px 65px 0px;
-    background-color: $bg-gray;
+.main {
+  padding: 50px 0px 65px 0px;
+  background-color: $bg-gray;
 
-    &__div__head{
-        @media (min-width: $tablet) {
-            display: flex;
-            flex-wrap: wrap;
+  &__div__head {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
-        }
+  &__h2 {
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    // color: red;
+  }
+  &__restaurant {
+    width: 50%;
+  }
+  &__article {
+    margin-left: 5%;
+    background-color: $bg-white;
+
+    @include shadow-box;
+    width: 90%;
+
+    margin-bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+
+    &__span {
+      background-color: $banner-color;
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      right: 10px;
+      width: 80px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.2rem;
+      color: $banner-text-color;
+      font-size: 0.8rem;
     }
 
-    &__h2{
-        padding-left: 20px;
-        font-size: 1.5rem;
-        margin-top: 0px;
-        // color: red;
+    &--img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      z-index: -9999;
     }
-    &__restaurant{
+  }
+  &__div__1 {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-        width: 50%;
-
-    }
-    &__article{
-        
-        margin-left: 5%;
-        background-color: $bg-white;
-
-        @include shadow-box;
-        width: 90%;
-    
-        margin-bottom: 20px;
-        border-radius: 20px;
-        position: relative;
-
-
-
-        &__span{
-            background-color: $banner-color;
-            position: absolute;
-            z-index: 9999;
-            top: 10px;
-            right: 10px;
-            width: 80px ;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 0.2rem;
-            color: $banner-text-color;
-            font-size: 0.8rem;
-
-        }
-        
-        &--img{
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-top-left-radius:20px ;
-            border-top-right-radius:20px ;
-            z-index: -9999;
-        }
-        
-    }
-    &__div__1{
-        height: 75px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-  
+  &__div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 70%;
+    &__h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
     }
 
-
-    &__div{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        width: 70%;
-        &__h3{
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-        
-        &__h4{
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: 200;
-        }
-        &--heart{
-            display: inline;
-            font-size: xx-large;
-            &:hover{
-                @include liked;
-                     }
-
-
-
-        }
-                
+    &__h4 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 200;
     }
+    &--heart {
+      display: inline;
+      font-size: xx-large;
+      font-weight: 100;
 
+      &:hover {
+        animation: Liked 1s linear;
+        @include liked;
+      }
+    }
+  }
 }
-
-
