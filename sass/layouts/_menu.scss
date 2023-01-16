@@ -1,3 +1,8 @@
+body{
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+}
 .menu__header {
   margin: 0;
   padding: 0;
@@ -49,9 +54,21 @@
     padding-left: 20px;
     @include title-mixin;
   }
+  @media (min-width: $laptop) {
+
+    &__rest{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+    }
+
+  }
 }
 
 .menu__section {
+
   &__h2 {
     display: block;
     font-weight: 300;
@@ -77,11 +94,13 @@
       }
     }
 
-    @media (min-width: $tablet) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+    // @media (min-width: $tablet) {
+    //   width: fit-content;
+    //   display: flex;
+    //   flex-direction: row;
+    //   gap: 10px;
+    //   // flex-wrap: wrap;
+    // }
   }
 }
 
@@ -103,18 +122,19 @@
   animation: 1s growDown linear;
   transform-origin: top center;
 
-  &:nth-child(1) {
-    animation-delay: 100ms;
-  }
   &:nth-child(2) {
-    animation-delay: 120ms;
+    
+    animation-delay: 0.1s;
   }
   &:nth-child(3) {
-    animation-delay: 140ms;
+    animation-delay: 0.3s;
+
   }
   &:nth-child(4) {
-    animation-delay: 160ms;
+    animation-delay: 0.5s;
+
   }
+
 
   margin-bottom: 1rem;
 

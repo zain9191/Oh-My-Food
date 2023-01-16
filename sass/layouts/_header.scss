@@ -135,9 +135,9 @@ body {
     @media (min-width: $tablet) {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      // justify-content: space-around;
       flex-direction: row;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
     }
   }
 
