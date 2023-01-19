@@ -92,6 +92,7 @@ body {
 
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5s;
 
     @include linear-gradient($color-secindaire, $color-Primaire);
     @include shadow-box;

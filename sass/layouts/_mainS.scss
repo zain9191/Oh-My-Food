@@ -80,11 +80,26 @@
     &--heart {
       display: inline;
       font-size: xx-large;
+
       font-weight: 100;
+      background: black;
+      background: -webkit-gradient(linear,left top,left bottom,from($color-Primaire),to($color-secindaire));
+      background: black;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      transition:  background-color 2s ease-out, font-weight 200ms ease-in;
+      
+
+
 
       &:hover {
-        animation: Liked 1s linear;
-        @include liked;
+        font-weight: 900;
+        background: -webkit-gradient(linear,left top,left bottom,from($color-Primaire),to($color-secindaire));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
       }
     }
   }

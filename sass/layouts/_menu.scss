@@ -57,17 +57,34 @@ body{
   @media (min-width: $laptop) {
 
     &__rest{
-      width: 100%;
+      // width: 100%;
+
+      // background-color: red;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-
     }
-
   }
+
+  @media (min-width: $tablet) {
+
+    &__rest{
+      // width: 100%;
+
+      // background-color: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
 }
 
 .menu__section {
+  width: 30%;
+  @media (min-width: $laptop) {
+    max-width: 30%;
+  }
 
   &__h2 {
     display: block;
@@ -88,19 +105,16 @@ body{
     }
   }
   &__div {
+    width: 100%;
     @media (max-width: $tablet) {
       & article:last-child {
         margin-bottom: 40px;
       }
     }
 
-    // @media (min-width: $tablet) {
-    //   width: fit-content;
-    //   display: flex;
-    //   flex-direction: row;
-    //   gap: 10px;
-    //   // flex-wrap: wrap;
-    // }
+
+
+
   }
 }
 
@@ -174,11 +188,10 @@ body{
   }
 
   &__hidden {
-    height: inherit;
-    transition: transform 5s ease-out;
+    transition: all 0.5s ease-out;
 
     height: inherit;
-    width: 60px;
+    width: 0px;
     background-color: $color-Tertiaire;
     color: $bg-white;
     border-top-right-radius: 1rem;
@@ -186,20 +199,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 
     & > i {
+      display: none;
       font-size: 1.5rem;
     }
   }
 
   &:hover .menu__article__hidden {
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: checked 500ms;
     & > i {
       animation: rotate 0.5s ease-in-out;
+      display: inline;
     }
   }
 }

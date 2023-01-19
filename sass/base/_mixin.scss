@@ -25,11 +25,11 @@
 
 
     
-@mixin liked{
-    font-weight: 900;
-    background: -webkit-gradient(linear, left top, left bottom, from($color-Primaire), to($color-secindaire));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+// @mixin liked{
+//     font-weight: 900;
+//     background: -webkit-gradient(linear, left top, left bottom, from($color-Primaire), to($color-secindaire));
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
 
 
-}
+// }
